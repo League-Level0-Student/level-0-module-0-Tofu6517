@@ -13,18 +13,16 @@ public class QuizGame {
 				// 2.  Ask the user a question 
 		if(input.equals("both")){
 			score=score+1;
-			JOptionPane.showMessageDialog(null,score);
+			
 			// 3.  Use an if statement to check if their answer is correct
 		}
-		 input = JOptionPane.showInputDialog("waffles or pancakes");
+		String input1 = JOptionPane.showInputDialog("dogs or cats");
 		// 2.  Ask the user a question 
-if(input.equals("both")){
+if(input1.equals("both")){
 	score=score+1;
 	JOptionPane.showMessageDialog(null,score);
 	// 3.  Use an if statement to check if their answer is correct
-}	
-				// 4.  if the user's answer was correct, add one to their score 
-		
+}
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
 				// Option: Subtract a point from their score for a wrong answer
 		

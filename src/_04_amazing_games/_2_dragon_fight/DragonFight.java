@@ -14,7 +14,13 @@ public class DragonFight {
 		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
 
 		// 1. Create some variables to hold health levels
-		
+		int Dhealth=100;
+		int Phealth=100;
+		int Dpower=0;
+		int Ppower=0;		
+			
+				
+				
 			// playerHealth to store your health - set it equal to 100
 	
 			// dragonHealth to store the dragon's health - set it equal to 100
