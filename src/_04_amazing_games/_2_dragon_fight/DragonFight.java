@@ -35,8 +35,41 @@ public class DragonFight {
 
 		
 		//  This while statement will cause the game attack code to repeat
-		while (true) {
+		while (true) {	
+			String input = JOptionPane.showInputDialog("Do you want to attack the dragon with a yell or kick");
+	if (input.equals("yell")) {
+		int number=ran.nextInt(10);
+		Ppower=Ppower+number;
+	Dhealth=Dhealth-Ppower;
+	JOptionPane.showMessageDialog(null,"Dragon health" +Dhealth);
+	Ppower=Ppower-Ppower;
+	}
+	if (input.equals("kick")) {
+		int number1=ran.nextInt(25);
+		Ppower=Ppower+number1;
+		Dhealth=Dhealth-Ppower;
+		JOptionPane.showMessageDialog(null,"Dragon health" +Dhealth);
+		Ppower=Ppower-Ppower;
+		}
+	if(input.equals("yell")||input.equals("kick")) {
+	JOptionPane.showMessageDialog(null,"The Dragon Attacks!");
+	int number2=ran.nextInt(35);
+	Dpower=Dpower+number2;
+	Phealth=Phealth-Dpower;
+	JOptionPane.showMessageDialog(null,"Player health" +Phealth);
+	Dpower=Dpower-Dpower;
+	}
+	JOptionPane.showMessageDialog(null,"Player health" +Phealth+ "Dragon Health" +Dhealth);
+	if(Phealth<=0) {
+		playerLost();
+	}
+	if(Dhealth<=0) {
+		dragonLost();
+	}
 
+
+		
+		}
 			// THE PLAYER ATTACKS THE DRAGON
 
 				// 3. Ask the player in a pop-up if they want to attack the dragon with a yell
@@ -79,7 +112,7 @@ public class DragonFight {
 
 		} // this is the end of the while loop
 
-	}
+	
 
 	static void playerLost() {
 		// 11. Tell the player that they have been defeated by the dragon and have no treasure

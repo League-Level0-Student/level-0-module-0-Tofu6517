@@ -5,7 +5,7 @@
 //    d. Save the image to your computer's desktop
 //    e. Drag and drop the image anywhere on this sketch
 
-
+size (300,300);
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
@@ -16,7 +16,7 @@ void setup() {
   
 // 2. The code below loads your cat picture into the program. 
 //     Make sure the file name is correct for the cat image you saved earlier
-cat = loadImage("cat.jpg");
+cat = loadImage("Big cat.jpeg");
   
 // 3. Set the size of the sketch. Make it big enough to show the cat you chose.
 
