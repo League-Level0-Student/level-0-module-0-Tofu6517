@@ -20,16 +20,19 @@ bob.setSpeed(100);
 		int squaresDrawn = 0;
 
 		// LOOP: Start a while loop to repeat the following code until 4 squares have been drawn:
-while (squaresDrawn < 4) {
+while (squaresDrawn < 500) {
 				// PEN COLOR.     Set the pen color to random       setRandomPenColor()
 		bob.setRandomPenColor();
 				// DRAW A SQUARE. Call the drawSquare() method.  Have you put some code in it?
 		drawSquare();
 				// TURN.          Turn the robot 90 degrees to the right
-			bob.turn(90);
+			bob.turn(1);
+			
 			    // INCREASE COUNT. Add one to the number of squares drawn
 			squaresDrawn +=1;
-		// End the loop here
+			
+			bob.hide();
+		// End the loop here 
 }
 	}
 

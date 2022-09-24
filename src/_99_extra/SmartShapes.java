@@ -21,7 +21,7 @@ bob.setSpeed(1000);
     	
         // Start a while loop to repeat the MOVE, TURN, and COUNT code 4 times
 
-    	while (sides<10) {
+    	while (sides<1000) {
 			
 		
         //         MOVE your robot 200 pixels
